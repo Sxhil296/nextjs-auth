@@ -11,7 +11,7 @@ console.log({session})
       <h1 className='logo'>
         <a href='#'>NextAuth</a>
       </h1>
-      <ul className={`main-nav`}>
+      <ul className={`main-nav ${!session ? 'loaded' : 'loading'}`}>
         <li>
           <Link href='/'>
             Home
