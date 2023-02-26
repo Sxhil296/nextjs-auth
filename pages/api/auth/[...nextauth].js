@@ -9,5 +9,12 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  database: process.env.DB_URL,
+  session: {
+    jwt: true
+  },
+  jwt: {
+    secret: 'asdcvbtjhm'
+  },
 }
 export default NextAuth(authOptions)
